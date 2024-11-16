@@ -29,9 +29,22 @@
 		261A62932CE8BF9F007EE01C /* SwiftSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		261A62AA2CE8C880007EE01C /* Exceptions for "SwiftSky" folder in "SwiftSky" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SwiftAtProtoLexicon,
+			);
+			target = 261A62772CE8BF9E007EE01C /* SwiftSky */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		261A627A2CE8BF9E007EE01C /* SwiftSky */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				261A62AA2CE8C880007EE01C /* Exceptions for "SwiftSky" folder in "SwiftSky" target */,
+			);
 			path = SwiftSky;
 			sourceTree = "<group>";
 		};
