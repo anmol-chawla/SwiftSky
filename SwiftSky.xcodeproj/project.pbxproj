@@ -29,22 +29,9 @@
 		261A62932CE8BF9F007EE01C /* SwiftSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		261A62AA2CE8C880007EE01C /* Exceptions for "SwiftSky" folder in "SwiftSky" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				SwiftAtProtoLexicon,
-			);
-			target = 261A62772CE8BF9E007EE01C /* SwiftSky */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		261A627A2CE8BF9E007EE01C /* SwiftSky */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				261A62AA2CE8C880007EE01C /* Exceptions for "SwiftSky" folder in "SwiftSky" target */,
-			);
 			path = SwiftSky;
 			sourceTree = "<group>";
 		};
@@ -119,6 +106,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				261A62FB2CE8CD6C007EE01C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				261A627A2CE8BF9E007EE01C /* SwiftSky */,
@@ -282,6 +270,10 @@
 			target = 261A62772CE8BF9E007EE01C /* SwiftSky */;
 			targetProxy = 261A62942CE8BF9F007EE01C /* PBXContainerItemProxy */;
 		};
+		261A62FB2CE8CD6C007EE01C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 261A62FA2CE8CD6C007EE01C /* SwiftLintBuildToolPlugin */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -412,6 +404,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -451,6 +444,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -618,6 +612,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		261A62FA2CE8CD6C007EE01C /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 261A62C52CE8C9C3007EE01C /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 261A62702CE8BF9E007EE01C /* Project object */;
 }
