@@ -6,24 +6,30 @@
 //
 
 enum LexiconType: String, Codable {
+    // Lex Primitives
     case BOOLEAN            = "boolean"
     case INTEGER            = "integer"
     case STRING             = "string"
-    
+    case UNKOWN             = "unkown"
+
     case BLOB               = "blob"
+    
+    // Lex IP LD
     case BYTES              = "bytes"
+    case CID_LINK           = "cid-link"
     
     case ARRAY              = "array"
     case OBJECT             = "object"
-    case UNION              = "union"
+    
+    // Lex Ref
+    case REF                = "ref"
+    case REF_UNION          = "union"
     
     case PROCEDURE          = "prodcedure"
     case QUERY              = "query"
     case RECORD             = "record"
-    case REF                = "ref"
     case SUBSCRIPTION       = "subscription"
     case TOKEN              = "token"
 
     case NULL               = "null"
-    case UNKOWN             = "unkown"
 }
