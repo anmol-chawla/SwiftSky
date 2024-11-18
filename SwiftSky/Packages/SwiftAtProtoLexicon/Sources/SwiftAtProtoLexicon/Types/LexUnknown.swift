@@ -3,7 +3,7 @@
 //  SwiftAtProtoLexicon
 //
 
-struct LexUnkown: BaseLexiconType, Codable {
+struct LexUnknown: BaseLexiconType, Codable {
     var type: LexiconType { .UNKOWN }
     let description: String?
     
