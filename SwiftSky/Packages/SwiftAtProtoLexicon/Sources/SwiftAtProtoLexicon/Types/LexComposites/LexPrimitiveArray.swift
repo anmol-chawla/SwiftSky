@@ -1,9 +1,9 @@
-//
-//  LexPrimitiveArray.swift
-//  SwiftAtProtoLexicon
-//
+    //
+    //  LexPrimitiveArray.swift
+    //  SwiftAtProtoLexicon
+    //
 
-enum LexPrimitiveArrayItem: Codable {
+enum LexPrimitiveArrayItem: Codable, LexiconFieldTypeDefinition {
         // Lex Primitive
     case BOOLEAN(LexBoolean)
     case INTEGER(LexInteger)
@@ -40,7 +40,7 @@ enum LexPrimitiveArrayItem: Codable {
         }
     }
     
-    func encode (to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         switch self {
             case let .BOOLEAN(def): try def.encode(to: encoder)
             case let .INTEGER(def): try def.encode(to: encoder)

@@ -25,6 +25,7 @@ enum LexiconType: String, Codable {
     case REF                = "ref"
     case REF_UNION          = "union"
     
+    case PARAMS             = "params"
     case PROCEDURE          = "prodcedure"
     case QUERY              = "query"
     case RECORD             = "record"

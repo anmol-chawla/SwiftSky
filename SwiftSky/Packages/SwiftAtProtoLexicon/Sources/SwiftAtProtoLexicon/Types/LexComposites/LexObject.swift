@@ -1,26 +1,26 @@
-//
-//  LexObject.swift
-//  SwiftAtProtoLexicon
-//
+    //
+    //  LexObject.swift
+    //  SwiftAtProtoLexicon
+    //
 
-enum LexObjectProperty: Codable {
+enum LexObjectProperty: Codable, LexiconFieldTypeDefinition {
     case ARRAY(LexArray)
     
-    // Lex Primitive
+        // Lex Primitive
     case BOOLEAN(LexBoolean)
     case INTEGER(LexInteger)
     case STRING(LexString)
     case UNKNOWN(LexUnknown)
     
-    // Lex Ipld
+        // Lex Ipld
     case BYTES(LexBytes)
     case CID_LINK(LexCidLink)
     
-    // Lex Ref Variant
+        // Lex Ref Variant
     case REF(LexRef)
     case REF_UNION(LexRefUnion)
     
-    // Other
+        // Other
     case BLOB(LexBlob)
     
     private enum CodingKeys: String, CodingKey {
@@ -59,7 +59,7 @@ enum LexObjectProperty: Codable {
         }
     }
     
-    func encode (to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         switch self {
             case let .ARRAY(def): try def.encode(to: encoder)
             case let .BOOLEAN(def): try def.encode(to: encoder)

@@ -3,7 +3,7 @@
 //  SwiftAtProtoLexicon
 //
 
-enum LexArrayItem: Codable {
+enum LexArrayItem: Codable, LexiconFieldTypeDefinition {
     // Lex Primitive
     case BOOLEAN(LexBoolean)
     case INTEGER(LexInteger)
@@ -56,7 +56,7 @@ enum LexArrayItem: Codable {
         }
     }
     
-    func encode (to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         switch self {
             case let .BOOLEAN(def): try def.encode(to: encoder)
             case let .INTEGER(def): try def.encode(to: encoder)
@@ -95,7 +95,7 @@ struct LexArray: BaseLexiconType, Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
         description = try container.decodeIfPresent(String.self, forKey: .description)
-        _items = try container.decode(LexArrayItem.self, forKey: .type)
+        _items = try container.decode(LexArrayItem.self, forKey: .items)
         minLength = try container.decodeIfPresent(Int.self, forKey: .minLength)
         maxLength = try container.decodeIfPresent(Int.self, forKey: .maxLength)
     }
