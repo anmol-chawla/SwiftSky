@@ -6,7 +6,7 @@
 struct LexRefUnion: BaseLexiconType, Codable {
     var type: LexiconType { .REF_UNION }
     let description: String?
-    let refs: [String],
+    let refs: [String]
     let closed: Bool?
     
     private enum TypedCodingKeys: String, CodingKey {
