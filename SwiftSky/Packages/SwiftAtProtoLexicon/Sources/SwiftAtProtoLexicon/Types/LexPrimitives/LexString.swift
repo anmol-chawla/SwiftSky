@@ -30,7 +30,7 @@ struct LexString: BaseLexiconType, Codable {
     let `enum`: [String]?
     let const: String?
     let knownValues: [String]?
-    
+
     private enum TypedCodingKeys: String, CodingKey {
         case type
         case format

@@ -8,7 +8,7 @@ struct LexRefUnion: BaseLexiconType, Codable {
     let description: String?
     let refs: [String]
     let closed: Bool?
-    
+
     private enum TypedCodingKeys: String, CodingKey {
         case type
         case description
@@ -16,4 +16,3 @@ struct LexRefUnion: BaseLexiconType, Codable {
         case closed
     }
 }
-

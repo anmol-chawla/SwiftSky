@@ -9,7 +9,7 @@ struct LexBytes: BaseLexiconType, Codable {
     let description: String?
     let maxLength: Int?
     let minLength: Int?
-    
+
     private enum TypedCodingKeys: String, CodingKey {
         case type
         case description
@@ -17,4 +17,3 @@ struct LexBytes: BaseLexiconType, Codable {
         case minLength
     }
 }
-

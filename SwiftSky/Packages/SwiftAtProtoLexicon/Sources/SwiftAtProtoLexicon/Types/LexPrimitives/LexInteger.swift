@@ -12,7 +12,7 @@ struct LexInteger: BaseLexiconType, Codable {
     let maximum: Int?
     let `enum`: [Int]?
     let const: Int?
-    
+
     private enum TypedCodingKeys: String, CodingKey {
         case type
         case description

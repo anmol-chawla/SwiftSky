@@ -13,18 +13,18 @@ enum LexiconType: String, Codable {
     case UNKOWN             = "unkown"
 
     case BLOB               = "blob"
-    
+
     // Lex IP LD
     case BYTES              = "bytes"
     case CID_LINK           = "cid-link"
-    
+
     case ARRAY              = "array"
     case OBJECT             = "object"
-    
+
     // Lex Ref
     case REF                = "ref"
     case REF_UNION          = "union"
-    
+
     case PARAMS             = "params"
     case PROCEDURE          = "prodcedure"
     case QUERY              = "query"

@@ -8,7 +8,7 @@ struct LexBlob: BaseLexiconType, Codable {
     let description: String?
     let accept: [String]?
     let maxSize: Int?
-    
+
     private enum TypedCodingKeys: String, CodingKey {
         case type
         case description
@@ -16,4 +16,3 @@ struct LexBlob: BaseLexiconType, Codable {
         case maxSize
     }
 }
-
